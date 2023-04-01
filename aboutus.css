@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
+body{
+    margin: 0;
+}
+.aboutus-outer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.home-inner {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    left: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 100;
+}
+
+.elements {
+    font-family: 'Prompt', sans-serif;
+    font-size: 40px;
+    width: fit-content; 
+    scale: 1;
+    transition: .3s;
+}
+
+.elements:hover{
+    scale: 1.2;
+    border-bottom: #1f286a 2px solid ;
+}
+a:hover{
+    color: #759fd8;
+}
+
+a{
+    margin:3px;
+    text-decoration: none;
+    color: #1f286a;
+    transition: 0.3s;
+}
+.selected-element{
+    scale:1.2;
+}
+.selected-element a{
+    font-family: 'Prompt', sans-serif;
+    font-size: 40px;
+    width: fit-content; 
+    border-bottom: #1f286a 2px solid ;
+    color: #759fd8;
+}
+.aboutus-inner{
+    position: absolute;
+    right: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+    width: 600px;
+    font-size: 25px;
+    font-family: 'Prompt', sans-serif;
+    text-align: justify;
+    color: #3949cb;
+}
+.aboutus-title{
+    font-family: 'Prompt', sans-serif;
+    font-size: 40px;
+    width: fit-content; 
+    scale: 1;
+    color: #1f286a;
+}
+.contact-title{
+    font-family: 'Prompt', sans-serif;
+    font-size: 40px;
+    width: fit-content; 
+    scale: 1;
+    color: #1f286a;
+}
+.mail{
+    font-family: 'Prompt', sans-serif;
+    font-size: 20px;
+    width: fit-content; 
+    scale: 1;
+}
+.phone{
+    font-family: 'Prompt', sans-serif;
+    font-size: 20px;
+    width: fit-content; 
+    scale: 1;
+}
+.logo img{
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 75px;
+    z-index: 100;
+    cursor: pointer;
+}

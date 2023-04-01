@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <title>Login | Purple Uni</title>
+</head>
+
+<body>
+    <div class="registration-outer">
+        <div class="logo">
+            <img src="Assets/logo.jpg" alt="">
+        </div>
+        <div class="home-inner">
+            <div class="home-element elements"><a href="index.html">Home</a></div>
+            <div class="registration-element elements"><a href="registration.html">Registration</a></div>
+            <div class="login-element selected-element"><a href="login.html">Login</a></div>
+            <div class="about-element elements"><a href="aboutus.html">About Us</a></div>        
+        </div>
+        <div class="registration-inner">
+            <div class="registration-title">
+                Login
+            </div>
+            <div class="registration-form">
+                <form name="form" onsubmit="return validateForm(this)" onreset="return resetForm(this)">
+                    <div id="#5" class="registration-form-element">                        
+                        <select class="country-select" name="usertype" id="usertype">
+                            <option value="Default"></option>
+                            <option value="Admin">Administrator</option>
+                            <option value="user">Normal User</option>
+                        </select>
+                        <label id="#5label" for="usertype" class="country-label">UserType</label>
+                    </div>
+                    <div id="#1" class="registration-form-element">
+                        <input type="text" class="normal-inputs" name="userId" id="userId">
+                        <label id="#1label" for="userId" class="normal-labels">Username</label>
+                    </div>
+                    <div id="#2" class="registration-form-element">
+                        <input type="password" class="normal-inputs" name="password" id="password">
+                        <label id="#2label" for="password" class="normal-labels">Password</label>
+                    </div>                    
+                    <div class="registration-form-element button-outer">
+                        <input class="submit-button" id="#button" type="submit" value="Login">
+                        <input class="submit-button" type="reset" value="Reset">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

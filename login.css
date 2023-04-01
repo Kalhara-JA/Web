@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
+body {
+    margin: 0;
+}
+
+.registration-outer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.registration-inner {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #7c9af2;
+    position: absolute;
+    right: 200px;
+}
+
+.registration-form-element {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 60px;
+    grid-gap: 10px;
+    font-family: 'Prompt', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f286a;
+    border-bottom: #d5e3f7 solid 2px;
+    width: 100%;
+    position: relative;
+}
+
+.home-inner {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    left: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 100;
+}
+
+.elements {
+    font-family: 'Prompt', sans-serif;
+    font-size: 40px;
+    width: fit-content;
+    scale: 1;
+    transition: .3s;
+}
+
+.elements:hover {
+    scale: 1.2;
+    border-bottom: #1f286a 2px solid;
+}
+
+a:hover {
+    color: #759fd8;
+}
+
+a {
+    margin: 3px;
+    text-decoration: none;
+    color: #1f286a;
+    transition: 0.3s;
+}
+
+.selected-element {
+    scale: 1.2;
+}
+
+.selected-element a {
+    font-family: 'Prompt', sans-serif;
+    font-size: 40px;
+    width: fit-content;
+    border-bottom: #1f286a 2px solid;
+    color: #759fd8;
+}
+
+.registration-title {
+    font-family: 'Prompt', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #1f286a;
+}
+.normal-labels{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 18px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.normal-inputs {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-family: 'Prompt', sans-serif;
+    font-size: 15px;
+    color: transparent;
+    background: transparent;
+}
+
+.normal-inputs:focus~.normal-labels {
+    top: 8px;
+    left: 0;
+    font-size: 12px;
+    color: #1f286a;
+}
+
+.normal-inputs:focus {
+    color: #9da5e4;
+}
+
+.registration-form-element:focus-within {
+    border-bottom: #1f286a solid 3px !important;
+}
+
+.error-alert {
+    font-family: 'Prompt', sans-serif;
+    font-size: 10px;
+    color: #ff0000;
+}
+.button-outer{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-button {
+    display: block;
+    width: 200px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: #1c89ff;
+    border: solid 1px transparent;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Prompt', sans-serif;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: #d5e3f7;
+    border-color: #fff;
+    color: #1f286a;
+    font-size: 20px;
+}
+.country-select{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-family: 'Prompt', sans-serif;
+    font-size: 15px; 
+    color: #9da5e4;
+    background:transparent;
+}
+.country-label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 18px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.5s;
+}
+.country-select{
+    color: transparent;
+}
+.country-select:focus~.country-label{
+    top: 8px;
+    left: 0;
+    font-size: 12px;
+    color: #1f286a;
+}
+.country-select:focus{
+    color: #9da5e4;
+}
+.logo img{
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 75px;
+    z-index: 100;
+    cursor: pointer;
+}

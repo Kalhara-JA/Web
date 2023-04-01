@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <script src="registration.js"></script>
+    <title>Registration | Purple Uni</title>
+</head>
+
+<body>
+    
+    <div class="registration-outer">
+        <div class="logo">
+            <img src="Assets/logo.jpg" alt="">
+        </div>
+        <div class="home-inner">
+            <div class="home-element elements"><a href="index.html">Home</a></div>
+            <div class="registration-element selected-element"><a href="registration.html">Registration</a></div>
+            <div class="login-element elements"><a href="login.html">Login</a></div>
+            <div class="about-element elements"><a href="aboutus.html">About Us</a></div>            
+        </div>
+        <div class="registration-inner">
+            <div class="registration-title">
+                Registration
+            </div>
+            <div class="registration-form">
+                <form name="form" onsubmit="return validateForm(this)">
+                    <div id="#1" class="registration-form-element">
+                        <input type="text" class="normal-inputs" name="userId" id="userId">
+                        <label id="#1label" for="userId" class="normal-labels">User ID</label>
+                    </div>
+                    <div id="#2" class="registration-form-element">                        
+                        <input type="password" class="normal-inputs" name="password" id="password">
+                        <label id="#2label" for="password" class="normal-labels">Password</label>
+                    </div>
+                    <div id="#3" class="registration-form-element">                        
+                        <input type="text" class="normal-inputs" name="name" id="name">
+                        <label id="#3label" for="name" class="normal-labels">Name</label>
+                    </div>
+                    <div id="#4" class="registration-form-element">                        
+                        <input type="text" class="normal-inputs" name="address" id="address">
+                        <label id="#4label" for="address" class="normal-labels">Address</label>
+                    </div>
+                    <div id="#5" class="registration-form-element">                        
+                        <select class="country-select" name="country" id="country">
+                            <option value="Default"></option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Australia">Australia</option>
+                        </select>
+                        <label id="#5label" for="country" class="country-label">Country</label>
+                    </div>
+                    <div id="#6" class="registration-form-element">                        
+                        <input type="number" class="country-select" name="zipcode" id="zipcode">
+                        <label id="#6label" for="zipcode" class="country-label">ZIP Code</label>
+                    </div>
+                    <div id="#7" class="registration-form-element">                        
+                        <input type="email" class="normal-inputs" name="email" id="email">
+                        <label id="#7label" for="email" class="normal-labels">Email</label>
+                    </div>
+                    <div id="#8" class="registration-form-element">
+                        <div class="sex-elements">
+                            <input type="radio" class="radio-selections" name="sex" value="male" id="male">
+                            <label for="male" class="radio-labels">Male</label>
+                            <input type="radio" class="radio-selections" name="sex" value="female" id="female">
+                            <label for="female" class="radio-labels">Female</label>
+                        </div>
+                        <label id="#8label" for="sex" class="country-label">Sex</label>
+                    </div>
+                    <div id="#9" class="registration-form-element">                        
+                        <div class="language-element">
+                            <input type="checkbox" class="radio-selections" name="language" value="english" id="english">
+                            <label for="english" class="radio-labels">English</label>
+                            <input type="checkbox" class="radio-selections" name="language" value="nonenglish" id="nonenglish">
+                            <label for="nonenglish" class="radio-labels">Non English</label>
+                        </div>
+                        <label id="#9label" for="language" class="country-label">Language</label>
+                    </div>
+                    <div id="#10" class="registration-form-element">                        
+                        <textarea name="about" class="normal-inputs" id="about" cols="30" rows="2"></textarea>
+                        <label id="#10label" for="about" class="normal-labels">About</label>
+                    </div>
+                    <div class="registration-form-element button-outer">
+                        <input class="submit-button" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
