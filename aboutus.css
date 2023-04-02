@@ -2,6 +2,19 @@
 body{
     margin: 0;
 }
+.logging-state{
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    z-index: 100;
+    width: 80px;
+    height: 30px;
+    font-family: 'Prompt', sans-serif;
+    border-radius: 10px;
+    border-color: #3949cb;
+    background-color: #3949cb;
+    color: white;
+}
 .aboutus-outer {
     height: 100vh;
     width: 100vw;
