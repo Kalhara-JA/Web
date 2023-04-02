@@ -70,6 +70,7 @@ function validateForm(form) {
     if (validateUserType(usertype) == true) {
         if (validateUserId(userId) == true) {
             if (validatePassword(password) == true) {
+                document.getElementById("#stateButton").innerHTML = `<span>Logout<span>`;
                 return true;
             }
         }
